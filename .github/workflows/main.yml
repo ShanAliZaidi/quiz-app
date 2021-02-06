@@ -19,7 +19,7 @@ jobs:
       - name: build react app
         run: yarn build
       - name: Install Surge
-        run: npm install -g surge
+        run: npm install surge
       - name: Run surge
         run: surge ./build sa06-quizapp.surge.sh --token ${{ secrets.NEWTOKEN }}
 
